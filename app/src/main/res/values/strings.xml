@@ -3,4 +3,13 @@
     <string name="hello_world">Hello world!</string>
     <string name="user">Usuario</string>
     <string name="pssword">Contraseña</string>
+    <string name="soda_add">¿Desea agregar bebida?</string>
+    <string name="snack_add">¿Desea agregar un acompañanante?</string>
+    <string-array name="food_list">
+        <item>Pizza</item>
+        <item>Pollo</item>
+        <item>Hamburguesa</item>
+        <item>Lazanna</item>
+        <item>Ajiaco</item>
+    </string-array>
 </resources>

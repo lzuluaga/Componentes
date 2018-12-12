@@ -9,6 +9,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import static com.cedesistemas.myapplication.Constants.*;
+
+
 public class MainActivity extends AppCompatActivity implements TextWatcher {
 
     private EditText etUser;
@@ -60,9 +63,9 @@ public class MainActivity extends AppCompatActivity implements TextWatcher {
     public void login(View view) {
         User user = new User();
 
-        Intent intent = new Intent(MainActivity.this, MenuActivity.class);
-        intent.putExtra("nombre", etUser.getText().toString());
-        intent.putExtra("objeto", user);
+        Intent intent = new Intent(MainActivity.this, ComponentesActivity.class);
+        intent.putExtra(USER_NAME, etUser.getText().toString());
+        intent.putExtra(USER_OBJECT, user);
         startActivity(intent);
     }
 }
